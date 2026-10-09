@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">田爱源2024110533</string>
+    <string name="btn_add_text">ADD TEXTVIEW</string>
+    <string name="btn_query">查询</string>
+    <string name="hint_query">输入编程语言 (如 Kotlin, Java)</string>
+    <string name="tv_result_default">查询结果将显示在这里</string>
+    <string name="text_view_format">This is a new TextView %1$d</string>
+    <string name="advice_kotlin">Kotlin 是一门现代、跨平台、静态类型的编程语言。</string>
+    <string name="advice_java">Java 是一门面向对象的高级编程语言。</string>
+    <string name="advice_android">Android 是基于 Linux 内核的移动操作系统。</string>
+    <string name="advice_unknown">暂无关于 %1$s 的建议。</string>
+</resources>
