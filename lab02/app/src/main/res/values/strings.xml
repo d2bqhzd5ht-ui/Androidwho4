@@ -9,4 +9,7 @@
     <string name="advice_java">Java 是一门面向对象的高级编程语言。</string>
     <string name="advice_android">Android 是基于 Linux 内核的移动操作系统。</string>
     <string name="advice_unknown">暂无关于 %1$s 的建议。</string>
+    <string name="lang_kotlin">kotlin</string>
+    <string name="lang_java">java</string>
+    <string name="lang_android">android</string>
 </resources>

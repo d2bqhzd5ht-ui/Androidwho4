@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             val input = binding.etQuery.text.toString().trim()
             if (input.isNotEmpty()) {
                 // 调用 Model 层获取资源 ID (MVC 的 C 调用 M)
-                val resId = ProgramAdviserModel.getAdviceResId(input)
+                val resId = ProgramAdviserModel.getAdviceResId(this, input)
 
                 // 根据资源 ID 获取字符串，并更新 View (MVC 的 C 更新 V)
                 binding.tvResult.text = if (resId == R.string.advice_unknown) {
