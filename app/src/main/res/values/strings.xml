@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">田爱源2024110533exp03</string>
+
+    <!-- MainActivity 按钮 -->
+    <string name="btn_activity1">启动Activity1(正向传参)</string>
+    <string name="btn_activity2">启动Activity2(返回结果)</string>
+    <string name="btn_activity3">启动Activity3(调用相机)</string>
+    <string name="btn_activity4">启动Activity4(秒表)</string>
+
+    <!-- Activity1 -->
+    <string name="activity1_title">Activity1: 接收参数</string>
+
+    <!-- Activity2 -->
+    <string name="activity2_hint">请输入要返回的内容</string>
+    <string name="activity2_btn_confirm">确定并返回</string>
+
+    <!-- Activity3 -->
+    <string name="activity3_btn_take_photo">拍照</string>
+    <string name="activity3_image_desc">显示拍摄的照片</string>
+
+    <!-- Activity4 -->
+    <string name="activity4_btn_start">开始</string>
+    <string name="activity4_btn_stop">暂停</string>
+    <string name="activity4_btn_reset">重置</string>
+</resources>
