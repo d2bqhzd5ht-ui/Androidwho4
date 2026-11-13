@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">书籍信息管理tay2024110533</string>
+    <string name="main_title">田爱源2024110533</string>
+    <string name="detail_title">书籍详情</string>
+    <string name="list_tip">共 %1$d 本书，已按价格从低到高排序，点击书籍查看完整信息</string>
+    <string name="item_author">作者：%1$s</string>
+    <string name="price_format">¥%1$.2f</string>
+    <string name="year_format">%1$d 年</string>
+    <string name="label_title">书名</string>
+    <string name="label_author">作者</string>
+    <string name="label_publisher">出版社</string>
+    <string name="label_price">价格</string>
+    <string name="label_isbn">ISBN</string>
+    <string name="label_year">出版年份</string>
+</resources>
