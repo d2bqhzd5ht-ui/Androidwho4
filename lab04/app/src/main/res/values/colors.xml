@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 品牌色：与牌背的深红一致 -->
+    <color name="brand">#8C1D2F</color>
+    <color name="brand_dark">#6B1423</color>
+
+    <!-- 页面底色与文本 -->
+    <color name="page_bg">#F3F5F8</color>
+    <color name="divider">#E4E8ED</color>
+    <color name="text_primary">#1C2530</color>
+    <color name="text_secondary">#5A6675</color>
+
+    <!-- 头像占位 -->
+    <color name="avatar_bg">#E7EBF0</color>
+    <color name="avatar_fg">#A7B3C2</color>
+</resources>
