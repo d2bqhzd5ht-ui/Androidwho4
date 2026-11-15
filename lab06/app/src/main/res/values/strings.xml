@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 应用标题：姓名 + 学号，并包含姓名 tay -->
+    <string name="app_name">tay田爱源2024110533</string>
+
+    <!-- 底部导航栏 -->
+    <string name="tab_profile">个人信息</string>
+    <string name="tab_two">二张牌</string>
+    <string name="tab_three">三张牌</string>
+
+    <string name="avatar">头像</string>
+    <string name="edit_profile">修改个人信息</string>
+
+    <string name="name_label">姓名：%1$s</string>
+    <string name="student_id_label">学号：%1$s</string>
+    <string name="gender_label">性别：%1$s</string>
+    <string name="phone_label">电话：%1$s</string>
+    <string name="email_label">邮箱：%1$s</string>
+    <string name="hobbies_label">爱好：%1$s</string>
+    <string name="high_score_two_label">二张牌游戏最高分：%1$d</string>
+    <string name="high_score_three_label">三张牌游戏最高分：%1$d</string>
+    <string name="last_saved_label">上次保存：%1$s</string>
+    <string name="last_saved_none">尚未保存（当前为默认信息）</string>
+    <string name="serial_hint">个人信息与两种游戏的对局记录都以序列化对象保存在应用私有文件中，退出程序后重新打开即可恢复。</string>
+
+    <string name="name_hint">姓名</string>
+    <string name="student_id_hint">学号</string>
+    <string name="phone_hint">电话号码</string>
+    <string name="email_hint">电子邮件地址</string>
+    <string name="gender_hint">性别：</string>
+    <string name="hobbies_hint">爱好：</string>
+
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="travel">旅游</string>
+    <string name="reading">阅读</string>
+    <string name="game">游戏</string>
+    <string name="shopping">购物</string>
+
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="saved_toast">个人信息已序列化保存</string>
+
+    <string name="score_label">得分：%1$d</string>
+    <string name="best_score_label">最高分：%1$d</string>
+    <string name="reset_game">重新开始</string>
+    <string name="card_hidden">未翻开的牌</string>
+    <string name="restored_toast">已从序列化文件恢复上次的对局</string>
+</resources>
