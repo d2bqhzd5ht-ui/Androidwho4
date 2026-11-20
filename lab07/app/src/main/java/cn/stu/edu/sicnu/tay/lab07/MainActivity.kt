@@ -86,7 +86,41 @@ class MainActivity : AppCompatActivity(), MusicService.OnPlayStateChangeListener
         setupRecyclerView()
         setupSeekBar()
         setupClickListeners()
+        copyAssetsMusicToSdcard()  // 把 assets 里的 mp3 拷到 sdcard
         checkPermissions()
+    }
+
+    /**
+     * 把项目 assets/music/ 里的 mp3 文件复制到 /sdcard/Music/lab07/
+     * 这样 ContentResolver 就能扫描到它们
+     */
+    private fun copyAssetsMusicToSdcard() {
+        try {
+            val targetDir = java.io.File("/sdcard/Music/lab07")
+            if (!targetDir.exists()) targetDir.mkdirs()
+
+            val assetFiles = assets.list("music") ?: return
+            var copied = 0
+            for (name in assetFiles) {
+                if (!name.endsWith(".mp3")) continue
+                val target = java.io.File(targetDir, name)
+                if (target.exists() && target.length() > 0) continue  // 已拷过就跳过
+                assets.open("music/$name").use { input ->
+                    java.io.FileOutputStream(target).use { output ->
+                        input.copyTo(output)
+                    }
+                }
+                copied++
+            }
+
+            if (copied > 0) {
+                // 通知 MediaScanner 重新扫描
+                sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,
+                    Uri.parse("file://${targetDir.absolutePath}")))
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
     override fun onDestroy() {
