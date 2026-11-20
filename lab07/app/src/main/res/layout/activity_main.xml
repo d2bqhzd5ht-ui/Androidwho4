@@ -138,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/btn_stop"
-                android:src="@android:drawable/ic_media_pause"
+                android:src="@drawable/ic_media_stop"
                 android:scaleType="centerInside"
                 android:padding="8dp" />
         </LinearLayout>
