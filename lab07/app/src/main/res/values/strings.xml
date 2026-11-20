@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用标题：lab07 + 姓名 + 学号 -->
+    <string name="app_name">lab07田爱源2024110533</string>
+
+    <string name="btn_play_pause">播放/暂停</string>
+    <string name="btn_prev">上一首</string>
+    <string name="btn_next">下一首</string>
+    <string name="btn_stop">停止</string>
+</resources>

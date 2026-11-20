@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 音乐播放应用主题色 -->
+    <color name="brand">#1976D2</color>
+    <color name="brand_dark">#1565C0</color>
+
+    <!-- 页面底色与文本 -->
+    <color name="page_bg">#F5F5F5</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- 选中项背景色 -->
+    <color name="selected_item">#E3F2FD</color>
+</resources>
