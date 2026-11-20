@@ -10,7 +10,9 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Binder
 import android.os.Build
+import android.os.Handler
 import android.os.IBinder
+import android.os.Looper
 import androidx.core.app.NotificationCompat
 
 /**
@@ -250,7 +252,7 @@ class MusicService : Service() {
                     Thread.sleep(200)
                     val position = mediaPlayer?.currentPosition?.toLong() ?: 0L
                     val duration = mediaPlayer?.duration?.toLong() ?: 0L
-                    runOnUiThread {
+                    Handler(Looper.getMainLooper()).post {
                         for (listener in listeners) {
                             listener.onProgressChanged(position, duration)
                         }
@@ -279,7 +281,7 @@ class MusicService : Service() {
      */
     private fun notifyStateChanged() {
         val music = getCurrentMusic()
-        runOnUiThread {
+        Handler(Looper.getMainLooper()).post {
             for (listener in listeners) {
                 listener.onPlayStateChanged(state, music)
             }
